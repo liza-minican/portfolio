@@ -13,7 +13,18 @@ body {
 *:after {
   box-sizing: inherit;
 }
+header {
+  height: 500px;
+  background-color: blue;
+  padding: 40px 36px 0 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+}
+/* 
 .hero-image {
+  padding: 40px 36px 0 36px;
   background: linear-gradient(rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
     url(./images/slack-imgs.png);
   border: none;
@@ -24,20 +35,25 @@ body {
   background-size: cover;
   position: relative;
   display: flex;
-}
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+} */
 
 /* this part is all about the text over the header image */
 .hero-text {
   display: flex;
-  justify-content: flex-start;
+  justify-self: flex-start;
   flex-direction: column;
-  position: absolute;
-  color: white;
+  margin-top: 40px;
+  /* position: absolute; */
+  /* color: white; */
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
-  padding-top: 140px;
-  padding-left: 20px;
+  /* align-self: flex-start; */
+  /* padding-top: 140px; */
+  /* padding-left: 20px; */
 }
 
 .title {
@@ -46,7 +62,7 @@ body {
   font-weight: 600;
 }
 .definition {
-  padding-top: 80px;
+  /* padding-top: 80px; */
   display: inline;
   font-family: Roboto, sans-serif;
   font-size: 15px;
@@ -58,18 +74,22 @@ body {
   font-weight: 400;
 }
 
-/* styling three white social media icons on the hero image with circles around them, styling icons in the header start */
+/* styling three white social media icons on the hero image with circles around them*/
+/*styling icons in the header start */
 
 .icons-header {
   display: flex;
-  width: 100%;
-  flex-direction: row;
   justify-content: flex-end;
-  padding-top: 110px;
-  padding-right: 20px;
+  margin-top: 60px;
+  /* align-items: flex-end; */
+  /* padding-right: 60px; */
+  /* flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 110px; */
+  /* padding-right: 20px; */
 }
 
-.social-media-round-header {
+.icon-circle-header {
   display: inline-block;
   justify-content: flex-end;
   width: 40px;
@@ -88,6 +108,23 @@ body {
   height: auto;
   margin-top: 10px;
 }
+/* end of styling icons in the header*/
+
+/* round profile image styling */
+.profile-header-image {
+  background: url("./images/smallerone.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: 150px;
+  margin-bottom: -30px;
+  display: flex;
+  align-self: flex-end;
+}
 
 .section-header {
   display: flex;
@@ -99,9 +136,15 @@ body {
   font-family: Montserrat, Bold;
   font-size: 25px;
 }
-/* styling icons in the header end */
 
-/* styling three red social media icons on the hero image with circles around them, styling icons in the for more section start */
+@media screen and (min-width: 700px) {
+  header {
+    padding: 100px 100px 0 100px;
+  }
+}
+
+/* styling three red social media icons on the hero image with circles around them*/
+/*start of tyling icons in the For More section*/
 .icons-page-end {
   display: flex;
   width: 100%;
@@ -141,18 +184,18 @@ body {
   font-weight: 600;
 }
 
-/* Reposition icons */
+/* Repositioning the icons in the For More section */
 .icon-first {
   padding-left: 20px;
 }
 .icon-second {
   padding-left: 35px;
 }
-.icon-second {
+.icon-third {
   padding-left: 20px;
 }
 
-/* styling icons in the For More section end */
+/* end of tyling icons in the For More section */
 
 /* footer section with contact information */
 

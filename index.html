@@ -11,40 +11,50 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+    <!-- header with a hero image, icons, round picture and text -->
     <header>
-      <div class="hero-image">
-        <div class="icons-header">
-          <figure class="social-media-round-header">
+      <!-- <div class="hero-image"> -->
+      <!-- icons inside round figures -->
+      <div class="icons-header">
+        <a href="https://www.linkedin.com/in/elizavetaminican/">
+          <figure class="icon-circle-header">
             <img
               src="./images/iconmonstr-linkedin-1.svg"
               class="social-media-images-1"
               alt="linkedin icon"
-            />
-          </figure>
-          <figure class="social-media-round-header">
+            /></figure
+        ></a>
+
+        <a href="https://github.com/liza-minican">
+          <figure class="icon-circle-header">
             <img
               src="./images/github.svg"
               class="social-media-images-1"
               alt="github icon"
             />
           </figure>
-          <figure class="social-media-round-header">
+        </a>
+        <a href="https://stackoverflow.com/users/14080134/liza">
+          <figure class="icon-circle-header">
             <img
-              src="./images/93ae73c51933403f4cf8512e8cf05115.svg"
+              src="./images/stackoverflow-white.svg"
               class="social-media-images-1"
               alt="stackoverflow icon"
-            />
-          </figure>
-        </div>
-        <div class="hero-text">
-          <h2 class="definition">
-            <span>PORTFOLIO:</span> <span class="my-name"> LIZA MINICAN</span>
-          </h2>
-          <h1 class="title">frontend developer</h1>
-        </div>
+            /></figure
+        ></a>
       </div>
+    <div class="hero-text">
+      <h2 class="definition">
+        <span>PORTFOLIO:</span> <span class="my-name"> LIZA MINICAN</span>
+      </h2>
+      <h1 class="title">frontend developer</h1>
+    </div>
+    </div>
+      <div class="profile-header-image"></div>
+      <!-- </div> -->
     </header>
-    <section class="about-me">
+    <!-- my introduction -->
+    <section class="portfolio-section colored-background">
       <p>
         I'm baby sustainable four dollar toast distillery trust fund
         intelligentsia tumeric chambray pickled tofu narwhal. Direct trade cred
@@ -52,48 +62,64 @@
         asymmetrical schlitz sustainable.
       </p>
     </section>
-    <section class="technologies">
+    <!-- the list of technlogies i work with -->
+    <section class="portfolio-section">
       <h2 class="section-header">TECH</h2>
       <p>
         I'm baby sustainable four dollar toast distillery trust fund
         intelligentsia tumeric chambray pickled tofu narwhal.
       </p>
     </section>
-    <section class="projects">
+
+    <!-- featured projects cards section -->
+    <section class="portfolio-section colored-background">
       <h2 class="section-header">FEATURED PROJECTS</h2>
-      <img class="projects-image" />
-      <p>WEATHER APP: The app from API</p>
-      <div class="technologies">
-        <p>CSS</p>
-        <p>HTML</p>
-        <p>Javascript</p>
+      <div class="featured-projects-card">
+        <img src="" class="" alt="background image for a featured project" />
+        <h2>Text on the image</h2>
+        <h1>Title of the project</h1>
+        <p>Project description</p>
+        <div class="technologies-used">
+          <p>CSS</p>
+          <p>HTML</p>
+          <p>Javascript</p>
+        </div>
       </div>
+
+      <!-- other projects cards section -->
+      <section class="portfolio-section">
+        <img class="projects-image" />
+        <h3 class="section-header-more">OTHER PROJECTS</h3>
+        <p>WEATHER APP: The app from API</p>
+        <div class="technologies">
+          <p>CSS</p>
+          <p>HTML</p>
+          <p>Javascript</p>
+        </div>
+      </section>
     </section>
-    <section class="other-projects">
-      <img class="projects-image" />
-      <h3 class="section-header-more">OTHER PROJECTS</h3>
-      <p>WEATHER APP: The app from API</p>
-      <div class="technologies">
-        <p>CSS</p>
-        <p>HTML</p>
-        <p>Javascript</p>
-      </div>
-    </section>
-    <section class="my-thoughts">
+
+    <!-- section displaying my articles -->
+    <section class="portfolio-section">
       <h2 class="section-header">MY THOUGHTS ABOUT CODE</h2>
       <img class="projects-image thoughts" />
       <p>Surprising things about becoming a frontend developer</p>
+      <!-- section displaying other thoughts, other articles -->
+      <section class="portfolio-section">
+        <h3 class="section-header-more">OTHER THOUGHTS</h3>
+        <img class="projects-image more-thoughts" />
+        <p>OCTOBER 2020: Learning Javascript</p>
+      </section>
     </section>
-    <section class="more-thoughts">
-      <h3 class="section-header-more">OTHER THOUGHTS</h3>
-      <img class="projects-image more-thoughts" />
-      <p>OCTOBER 2020: Learning Javascript</p>
-    </section>
-    <section class="skills">
+
+    <!-- my skills -->
+    <section class="portfolio-section colored-background">
       <h2 class="section-header">SKILLS</h2>
     </section>
 
-    <section class="for-more">
+    <!-- section with clickable social media icons -->
+
+    <section class="portfolio-section">
       <h2 class="section-header">FOR MORE</h2>
       <div class="icons-page-end">
         <figure class="social-media-round-end">
@@ -125,7 +151,8 @@
       </div>
     </section>
 
-    <section class="footer">
+    <!-- footer with contact information-->
+    <section class="portfolio-section footer">
       <div class="footer-text">
         <h1 class="footer-contact-title">CONTACT</h1>
         <p class="text-inside-footer">LIZA MINICAN</p>
