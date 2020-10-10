@@ -16,10 +16,16 @@ body {
 header {
   height: 500px;
   background-color: blue;
-  padding: 40px 36px 0 36px;
+  /* padding: 40px 36px 0 36px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url(./images/background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  background-position: center;
   /* align-items: flex-end; */
 }
 /* 
@@ -46,14 +52,10 @@ header {
   justify-self: flex-start;
   flex-direction: column;
   margin-top: 40px;
-  /* position: absolute; */
-  /* color: white; */
+  margin-left: 30px;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
-  /* align-self: flex-start; */
-  /* padding-top: 140px; */
-  /* padding-left: 20px; */
 }
 
 .title {
@@ -62,10 +64,9 @@ header {
   font-weight: 600;
 }
 .definition {
-  /* padding-top: 80px; */
   display: inline;
   font-family: Roboto, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.52px;
   font-weight: 200;
 }
@@ -81,6 +82,7 @@ header {
   display: flex;
   justify-content: flex-end;
   margin-top: 60px;
+  margin-right: 60px;
   /* align-items: flex-end; */
   /* padding-right: 60px; */
   /* flex-direction: row;
@@ -99,7 +101,6 @@ header {
   text-align: center;
   margin-right: 10px;
   background: transparent;
-  /* line-height: 1.7em; */
 }
 
 .social-media-images-1 {
@@ -111,7 +112,7 @@ header {
 /* end of styling icons in the header*/
 
 /* round profile image styling */
-.profile-header-image {
+.profile-image {
   background: url("./images/smallerone.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -120,8 +121,7 @@ header {
   width: 150px;
   height: 150px;
   margin-top: 30px;
-  margin-left: 150px;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
   display: flex;
   align-self: flex-end;
 }
@@ -130,17 +130,178 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
   background: #fa382f;
   color: white;
   font-family: Montserrat, Bold;
-  font-size: 25px;
+  font-size: 23px;
+  padding: 3px;
+  width: fit-content;
+  align-self: center;
 }
 
 @media screen and (min-width: 700px) {
   header {
     padding: 100px 100px 0 100px;
   }
+  .profile-image {
+    background: url("./images/photoForDesktop.jpg");
+    width: 210px;
+    height: 210px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .featured-projects-card {
+    width: 48%;
+  }
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+/* .red-line {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  shape-outside: inset(50%);
+} */
+.container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.plain-text {
+  font-family: Montserrat, Regular;
+  font-size: 17px;
+}
+.plain-text-bold {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 3px;
+}
+.title-secondary {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: red;
+}
+
+.line {
+  display: inline-block;
+  width: 55px;
+  height: 5px;
+  border-top: 4px solid #800080;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #800080;
+  background-color: #800080;
+  margin-right: 17px;
+  margin-left: -1px;
+  border-radius: 50%;
+}
+
+.portfolio-section {
+  /* height: 300px; */
+  padding: 10px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.colored-background {
+  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.featured-projects-card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  margin-bottom: 30px;
+  /* max-width: 400px; */
+}
+.flex-images {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+h4 {
+  font-weight: bold;
+}
+.highlighted {
+  color: red;
+}
+
+.highlighted-bold {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+.arrow-sign {
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+}
+/* more thoughts */
+.more-thoughts-link {
+  letter-spacing: 0.5px;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: black;
+}
+.thought {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+/* skills section */
+.skills {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+}
+.part {
+  margin-right: 30px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.part-last {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* styling three red social media icons on the hero image with circles around them*/
@@ -151,7 +312,6 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 60px;
 }
 .social-media-round-end {
   display: inline-block;
@@ -189,10 +349,10 @@ header {
   padding-left: 20px;
 }
 .icon-second {
-  padding-left: 35px;
+  padding-left: 45px;
 }
 .icon-third {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 /* end of tyling icons in the For More section */
