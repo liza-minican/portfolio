@@ -17,7 +17,6 @@
 header {
   height: 500px;
   background-color: #e59a5c;
-  /* padding: 40px 36px 0 36px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,25 +26,7 @@ header {
   background-position: bottom;
   width: 100%;
   background-position: center;
-  /* align-items: flex-end; */
 }
-/* 
-.hero-image {
-  padding: 40px 36px 0 36px;
-  background: linear-gradient(rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
-    url(./images/slack-imgs.png);
-  border: none;
-  height: 500px;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-} */
 
 /* this part is all about the text over the header image */
 .hero-text {
@@ -77,7 +58,7 @@ header {
   color: #e59a5c;
 }
 
-/* styling three white social media icons on the hero image with circles around them*/
+/*three social media icons in the header*/
 /*styling icons in the header start */
 
 .icons-header {
@@ -85,12 +66,6 @@ header {
   justify-content: flex-end;
   margin-top: 60px;
   margin-right: 60px;
-  /* align-items: flex-end; */
-  /* padding-right: 60px; */
-  /* flex-direction: row;
-  justify-content: flex-end;
-  padding-top: 110px; */
-  /* padding-right: 20px; */
 }
 
 .icon-circle-header {
@@ -142,7 +117,7 @@ header {
   width: fit-content;
   align-self: center;
 }
-
+/* media queries for the header section */
 @media screen and (min-width: 600px) {
   .profile-image {
     background: url("./images/photoForTablet.jpg");
@@ -152,14 +127,6 @@ header {
   .hero-text {
     margin-top: 100px;
     margin-left: 170px;
-  }
-  .featured-projects-card {
-    width: 48%;
-  }
-  .cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -178,14 +145,14 @@ header {
     margin-left: 400px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .hero-text {
+    margin-left: 900px;
+  }
+}
+/* introduction section */
 
-/* .red-line {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  shape-outside: inset(50%);
-} */
-.container {
+.intro-container {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -193,26 +160,7 @@ header {
   text-align: center;
   align-items: center;
 }
-.plain-text {
-  font-family: Montserrat, Regular;
-  font-size: 17px;
-}
-.plain-text-bold {
-  font-family: Roboto, sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  margin-left: 3px;
-}
-.title-secondary {
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #e59a5c;
-}
-
+/* decoration line and dot for the introduction */
 .line {
   display: inline-block;
   width: 55px;
@@ -230,9 +178,31 @@ header {
   margin-left: -1px;
   border-radius: 50%;
 }
+/* reusable styles for text  */
+.plain-text {
+  font-family: Montserrat, Regular;
+  font-size: 17px;
+}
+.plain-text-bold {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 3px;
+}
+/* titles for more projects and thoughts sections */
+.title-secondary {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #e59a5c;
+}
+
+/* portfolio sections general rules */
 
 .portfolio-section {
-  /* height: 300px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -242,7 +212,6 @@ header {
 }
 .colored-background {
   background-color: #e8f0f2;
-  /* background-color: #f4f4f4; */
 }
 
 .cards {
@@ -253,15 +222,12 @@ header {
 .featured-projects-card {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
   flex-wrap: wrap;
   text-decoration: none;
   color: black;
   font-family: Roboto, sans-serif;
   font-size: 17px;
   margin-bottom: 30px;
-  /* max-width: 400px; */
 }
 .flex-images {
   overflow: hidden;
@@ -272,10 +238,10 @@ header {
 h4 {
   font-weight: bold;
 }
+/* reusable rules for the highlighted text and arrow signs */
 .highlighted {
   color: #6ba295;
 }
-
 .highlighted-bold {
   color: #6ba295;
   font-weight: bold;
@@ -286,7 +252,18 @@ h4 {
   font-weight: bold;
   margin-left: 10px;
 }
-/* more thoughts */
+@media screen and (min-width: 600px) {
+  .featured-projects-card {
+    width: 48%;
+  }
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/* more thoughts section */
 .more-thoughts-link {
   letter-spacing: 0.5px;
   width: 100%;
@@ -323,6 +300,8 @@ h4 {
   padding-top: 20px;
   text-align: center;
 }
+
+/* media queries for the skills section  */
 @media screen and (min-width: 700px) {
   .skills {
     flex-wrap: nowrap;
@@ -336,14 +315,9 @@ h4 {
     width: 100%;
   }
 }
-@media screen and (min-width: 2000px) {
-  .hero-text {
-    margin-left: 900px;
-  }
-}
 
-/* styling three red social media icons on the hero image with circles around them*/
-/*start of tyling icons in the For More section*/
+/* three social media icons in the For more section*/
+/*start of styling the icons*/
 .icons-page-end {
   display: flex;
   width: 100%;
@@ -362,7 +336,6 @@ h4 {
   text-align: center;
   margin-right: 10px;
 }
-
 .social-media-images-2 {
   display: inline-block;
   width: 20px;
@@ -376,35 +349,14 @@ h4 {
   font-size: 12px;
   font-family: Roboto, Bold;
   font-weight: 600;
+  text-decoration: none;
 }
-.icons-end-text {
-  color: #6ba295;
-  margin-top: 5px;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 12px;
-  font-family: Roboto, Bold;
-  font-weight: 600;
-}
+
 .third {
   margin-left: -20px;
 }
 
-/* Repositioning the icons in the For More section */
-.icon-first {
-  padding-left: 20px;
-}
-.icon-second {
-  padding-left: 45px;
-}
-.icon-third {
-  padding-left: 40px;
-}
-
-/* end of tyling icons in the For More section */
+/* end of styling the icons */
 
 /* footer section with contact information */
 
@@ -412,9 +364,6 @@ h4 {
   text-align: center;
   color: white;
   background-color: #6ba295;
-  /* background-color: #821752; */
-  /* background-color: #64958f; */
-  /* background-color: #ffbb91; */
   height: 230px;
   opacity: 1;
 }
