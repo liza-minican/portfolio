@@ -3,10 +3,11 @@
   padding: 0;
   margin: 0;
 }
-body {
+*/ body {
   margin: 0;
   height: 100%;
   background-color: whitesmoke;
+  overflow-x: hidden;
 }
 *,
 *:before,
@@ -15,7 +16,7 @@ body {
 }
 header {
   height: 500px;
-  background-color: blue;
+  background-color: #e59a5c;
   /* padding: 40px 36px 0 36px; */
   display: flex;
   flex-direction: column;
@@ -54,7 +55,7 @@ header {
   margin-top: 40px;
   margin-left: 30px;
   letter-spacing: 0px;
-  color: #ffffff;
+  color: #6ba295;
   opacity: 1;
 }
 
@@ -68,11 +69,12 @@ header {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   letter-spacing: 0.52px;
-  font-weight: 200;
+  font-weight: 400;
 }
 .my-name {
   margin-left: 10px;
-  font-weight: 400;
+  font-weight: 800;
+  color: #e59a5c;
 }
 
 /* styling three white social media icons on the hero image with circles around them*/
@@ -97,7 +99,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  border: 2px solid white;
+  border: 2px solid black;
   text-align: center;
   margin-right: 10px;
   background: transparent;
@@ -132,7 +134,7 @@ header {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
-  background: #fa382f;
+  background: #e59a5c;
   color: white;
   font-family: Montserrat, Bold;
   font-size: 23px;
@@ -141,16 +143,15 @@ header {
   align-self: center;
 }
 
-@media screen and (min-width: 700px) {
-  header {
-    padding: 100px 100px 0 100px;
-  }
+@media screen and (min-width: 600px) {
   .profile-image {
-    background: url("./images/photoForDesktop.jpg");
-    width: 210px;
-    height: 210px;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("./images/photoForTablet.jpg");
+    width: 150px;
+    height: 150px;
+  }
+  .hero-text {
+    margin-top: 100px;
+    margin-left: 170px;
   }
   .featured-projects-card {
     width: 48%;
@@ -161,6 +162,23 @@ header {
     justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 800) {
+  .profile-image {
+    background: url("./images/photoForDesktop.jpg");
+    width: 210px;
+    height: 210px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero-text {
+    margin-top: 100px;
+    margin-left: 400px;
+  }
+}
+
 /* .red-line {
   display: flex;
   align-items: center;
@@ -192,22 +210,22 @@ header {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
-  color: red;
+  color: #e59a5c;
 }
 
 .line {
   display: inline-block;
   width: 55px;
   height: 5px;
-  border-top: 4px solid #800080;
+  border-top: 4px solid #e59a5c;
 }
 
 .dot {
   display: inline-block;
   width: 10px;
   height: 10px;
-  border: 2px solid #800080;
-  background-color: #800080;
+  border: 2px solid #e59a5c;
+  background-color: #e59a5c;
   margin-right: 17px;
   margin-left: -1px;
   border-radius: 50%;
@@ -215,13 +233,15 @@ header {
 
 .portfolio-section {
   /* height: 300px; */
-  padding: 10px 36px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  text-align: center;
   align-items: center;
+  padding: 10px 36px;
 }
 .colored-background {
-  background-color: #f4f4f4;
+  background-color: #e8f0f2;
   /* background-color: #f4f4f4; */
 }
 
@@ -253,16 +273,16 @@ h4 {
   font-weight: bold;
 }
 .highlighted {
-  color: red;
+  color: #6ba295;
 }
 
 .highlighted-bold {
-  color: red;
+  color: #6ba295;
   font-weight: bold;
   text-decoration: none;
 }
 .arrow-sign {
-  color: red;
+  color: #6ba295;
   font-weight: bold;
   margin-left: 10px;
 }
@@ -303,6 +323,24 @@ h4 {
   padding-top: 20px;
   text-align: center;
 }
+@media screen and (min-width: 700px) {
+  .skills {
+    flex-wrap: nowrap;
+  }
+  .part-last {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .part {
+    margin-right: 0px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .hero-text {
+    margin-left: 900px;
+  }
+}
 
 /* styling three red social media icons on the hero image with circles around them*/
 /*start of tyling icons in the For More section*/
@@ -312,6 +350,7 @@ h4 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 60px;
 }
 .social-media-round-end {
   display: inline-block;
@@ -319,7 +358,7 @@ h4 {
   width: 55px;
   height: 55px;
   border-radius: 50px;
-  border: 3px solid #fa382f;
+  border: 3px solid black;
   text-align: center;
   margin-right: 10px;
 }
@@ -330,10 +369,17 @@ h4 {
   height: auto;
   margin-top: 15px;
 }
+.icon-text {
+  color: black;
+  margin-top: 30px;
+  width: 100%;
+  font-size: 12px;
+  font-family: Roboto, Bold;
+  font-weight: 600;
+}
 .icons-end-text {
-  color: #fa382f;
+  color: #6ba295;
   margin-top: 5px;
-  margin-bottom: 60px;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -342,6 +388,9 @@ h4 {
   font-size: 12px;
   font-family: Roboto, Bold;
   font-weight: 600;
+}
+.third {
+  margin-left: -20px;
 }
 
 /* Repositioning the icons in the For More section */
@@ -362,7 +411,7 @@ h4 {
 .footer {
   text-align: center;
   color: white;
-  background-color: #072bce;
+  background-color: #6ba295;
   /* background-color: #821752; */
   /* background-color: #64958f; */
   /* background-color: #ffbb91; */
