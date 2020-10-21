@@ -1,7 +1,7 @@
 # portfolio
 
 This is my portfolio.
-It icludes several sections like:
+It icludes several sections:
 -Introduction
 -Featured projects
 -My thoughts
@@ -10,4 +10,5 @@ It icludes several sections like:
 -Contact information
 You can find also links to my social media accounts.
 The website was build with HTML and CSS.
-I will add some Javascript to it later on.
+
+Here is the link: https://liza-minican-portfolio.netlify.app 
