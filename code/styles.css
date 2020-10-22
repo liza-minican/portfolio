@@ -16,7 +16,7 @@
 }
 header {
   height: 500px;
-  background-color: #e59a5c;
+  /* background-color: #e59a5c; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
