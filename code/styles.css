@@ -117,43 +117,11 @@ header {
   width: fit-content;
   align-self: center;
 }
-/* media queries for the header section */
-@media screen and (min-width: 600px) {
-  .profile-image {
-    background: url("./images/photoForTablet.jpg");
-    width: 150px;
-    height: 150px;
-  }
-  .hero-text {
-    margin-top: 100px;
-    margin-left: 170px;
-  }
-}
 
-@media screen and (min-width: 800) {
-  .profile-image {
-    background: url("./images/photoForDesktop.jpg");
-    width: 210px;
-    height: 210px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 900px) {
-  .hero-text {
-    margin-top: 100px;
-    margin-left: 400px;
-  }
-}
-@media screen and (min-width: 2000px) {
-  .hero-text {
-    margin-left: 900px;
-  }
-}
 /* introduction section */
 
 .intro-container {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -181,7 +149,7 @@ header {
 /* reusable styles for text  */
 .plain-text {
   font-family: Montserrat, Regular;
-  font-size: 17px;
+  font-size: 22px;
 }
 .plain-text-bold {
   font-family: Roboto, sans-serif;
@@ -198,6 +166,46 @@ header {
   margin-bottom: 30px;
   text-align: center;
   color: #e59a5c;
+  align-self: center;
+}
+/* media queries for the header section and intro */
+@media screen and (min-width: 600px) {
+  .profile-image {
+    background: url("./images/photoForTablet.jpg");
+    width: 150px;
+    height: 150px;
+  }
+  .hero-text {
+    margin-top: 100px;
+    margin-left: 170px;
+  }
+  .intro-container {
+    margin: 20px 150px 30px 150px;
+  }
+}
+
+@media screen and (min-width: 800) {
+  .profile-image {
+    background: url("./images/photoForDesktop.jpg");
+    width: 210px;
+    height: 210px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero-text {
+    margin-top: 100px;
+    margin-left: 400px;
+  }
+  .intro-container {
+    margin: 20px 250px 30px 250px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .hero-text {
+    margin-left: 900px;
+  }
 }
 
 /* portfolio sections general rules */
@@ -208,6 +216,13 @@ header {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding: 10px 36px;
+}
+.portfolio-additional-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 10px 36px;
 }
 .colored-background {
@@ -252,6 +267,21 @@ h4 {
   font-weight: bold;
   margin-left: 10px;
 }
+
+/* tech-signs in pink boxes */
+
+.tech-sign-wrapper {
+  display: flex;
+}
+
+.tech-sign {
+  color: #2b2e34;
+  background-color: #fddfe7;
+  font-size: 12px;
+  padding: 4px 12px;
+  font-weight: bold;
+  margin: 3px;
+}
 @media screen and (min-width: 600px) {
   .featured-projects-card {
     width: 48%;
@@ -268,11 +298,10 @@ h4 {
   letter-spacing: 0.5px;
   width: 100%;
   text-decoration: none;
-  margin-bottom: 10px;
   color: black;
 }
 .thought {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   text-decoration: none;
   color: black;
 }
@@ -322,7 +351,7 @@ h4 {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
 }
